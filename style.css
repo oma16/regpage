@@ -1,0 +1,157 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins";
+    background-image:url("images/bg-intro-desktop.png");
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,121,120,25);
+    
+}
+.reg{
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 20px;
+    padding: 0 150px ;
+    
+}
+.form{
+    margin-top: 80px;
+}
+form{
+    width: 400px;
+    background-color: white;
+    padding:20px 0;
+    border-radius: 7px;
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.1);
+}
+.head{
+    margin: auto;
+    padding-top: 80px;
+    color: white;
+    font-family:"Poppins";
+}
+.head h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+.free span{
+    opacity:calc(0.7);
+}
+.head p{
+    font-size: 25px;
+    margin-top: 20px;
+    opacity: calc(0.8);
+}
+div input{
+    width:300px;
+    padding: 15px 12px;
+    margin:5px 0px;
+    border-radius: 5px;
+    border: 1.5px solid  hsl(246, 25%, 77%);
+}
+input:valid{
+    border:1px solid hsl(248, 32%, 49%);
+}
+input:focus:invalid{
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url('images/icon-error.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    
+    
+}
+
+button{
+    width:300px;
+    padding: 15px 12px;
+    margin:10px 0;
+    border-radius: 5px;
+    text-align: center;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+    word-spacing: 4px;
+}
+.click p{
+    text-align: center;
+    font-size: x-small;
+    color: hsl(246, 25%, 77%);
+    
+}
+.click span{
+    color:hsl(0, 100%, 74%) ;
+    font-weight: 700;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.free{
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width:900px){
+    .head h1{
+        font-size: 30px;
+    }
+    .reg{
+         padding: 0 80px ;   
+    }
+    
+    .head p{
+        font-size: 15px;
+    }
+    form{
+        width: 300px;
+    }
+    div input{
+        width:250px;
+    }
+    button{
+        width: 250px;
+    }
+    .click p{
+        font-size:12px;
+        width: 250px;
+    }
+}
+@media (max-width:600px){
+    body{
+        background-image:url("images/bg-intro-mobile.png");
+    }
+    .reg{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-bottom: 50px;
+    }
+    .head h1{
+        text-align: center;
+        font-size: 24px;
+        
+    }
+    .head p{
+        text-align: center;
+        font-size: 13.8px;
+    }
+    .free{
+        padding:20px 80px;
+    }
+    .click p{
+        font-size:11px;
+        width: 200px;
+    }
+}
