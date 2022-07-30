@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 body{
+    min-height: 100vh;
     font-family: "Poppins";
     background-image:url("images/bg-intro-desktop.png");
     background-position: center;
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255,121,120,25);
@@ -21,30 +21,30 @@ body{
     
 }
 .form{
-    margin-top: 80px;
+    margin-top: 7rem;
 }
 form{
-    width: 400px;
+    width: 25rem;
     background-color: white;
-    padding:20px 0;
+    padding:2rem 0;
     border-radius: 7px;
     box-shadow: 0px 6px rgba(0, 0, 0, 0.1);
 }
 .head{
     margin: auto;
-    padding-top: 80px;
+    padding-top: 6rem;
     color: white;
     font-family:"Poppins";
 }
 .head h1{
-    font-size: 60px;
+    font-size: 4rem;
     font-weight: 900;
 }
 .free span{
     opacity:calc(0.7);
 }
 .head p{
-    font-size: 25px;
+    font-size:1.5rem;
     margin-top: 20px;
     opacity: calc(0.8);
 }
@@ -97,35 +97,51 @@ button{
     color: white;
     background-color: hsl(248, 32%, 49%);
     text-align: center;
-    padding: 15px 0;
+    padding: 1rem 0;
     margin-bottom: 20px;
     border-radius: 7px;
     box-shadow: 0px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width:900px){
+@media (max-width:1200px){
     .head h1{
-        font-size: 30px;
+        font-size: 3rem;
     }
     .reg{
-         padding: 0 80px ;   
+         padding: 0 5rem ;   
+    }
+    .form{
+        margin-top: 5rem;
     }
     
     .head p{
-        font-size: 15px;
+        font-size: 1rem;
+    }
+    
+}
+@media (max-width:900px){
+    .head h1{
+        font-size: 2rem;
+    }
+    .reg{
+         padding: 0 3rem ;   
+    }
+    
+    .head p{
+        font-size: 1rem;
     }
     form{
-        width: 300px;
+        width: 19rem;
     }
     div input{
-        width:250px;
+        width:16rem;
     }
     button{
-        width: 250px;
+        width: 16rem;
     }
     .click p{
-        font-size:12px;
-        width: 250px;
+        font-size:0.8rem;
+        width: 16rem;
     }
 }
 @media (max-width:600px){
@@ -140,18 +156,19 @@ button{
     }
     .head h1{
         text-align: center;
-        font-size: 24px;
+        font-size: 1.9rem;
         
     }
     .head p{
         text-align: center;
-        font-size: 13.8px;
+        font-size: 1.1rem;
     }
     .free{
-        padding:20px 80px;
+        padding:1rem 4rem;
+        width: 19rem;
     }
     .click p{
         font-size:11px;
-        width: 200px;
+        width: 12rem;
     }
 }
